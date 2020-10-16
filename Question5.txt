@@ -1,0 +1,22 @@
+How much of Unix command line are you familiar with? Give some examples.
+
+My Answer:
+Working on projects in ubuntu and linux machine, I am aware of quite a few UNIX commands. 
+Examples:
+User commands:
+    whoami
+    groups
+    id
+    password
+File operations
+    ls(list),cp(copy),rm(remove),mv(move),chmod(change permissions)
+Text File operations
+    Cat-(concatenation)
+    grep-(search)
+Directory management operations
+    cd(change directions),pwd(present working Directory),mkdir(make directory),rmdir(remove directory)
+Network commands
+    ip(ip)
+    ping
+    ifconfig
+    netstat
