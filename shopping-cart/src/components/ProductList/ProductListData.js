@@ -1,4 +1,4 @@
-let productLists = [
+const productListData = [
 {
     id : 0,
     name : 'A Christmas Party',
@@ -70,7 +70,7 @@ let productLists = [
     name : 'The Rocks',
     category : 'Science',
     author : 'ABCD publishers'
-}
+},
 {
     id : 12,
     name : 'The gloabal warming',
@@ -80,3 +80,4 @@ let productLists = [
 
 
 ]
+export default productListData

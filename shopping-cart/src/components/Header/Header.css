@@ -1,0 +1,8 @@
+.header
+{
+    min-height: 20vh;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    background:linear-gradient(110deg,#eeee87 50%,#eeeeee 60%);
+}
