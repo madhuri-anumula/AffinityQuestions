@@ -4,11 +4,17 @@
     display: flex;
     width: 33%;
     flex-direction:column;
-    justify-content: space-between;
     box-sizing: border-box;
+    align-items: center;
+    margin-top: 0vmin;
 
 }
 .button
 {
-    width: 80px;
+    width: 120px;
+}
+
+.bookImage
+{
+     margin :10px 10px;
 }

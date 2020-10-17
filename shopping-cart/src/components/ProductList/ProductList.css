@@ -2,9 +2,10 @@
 .productList
 {
     width: 80%;
-    background-color: bisque;
+    background-color:#eeeeee ;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    
 }

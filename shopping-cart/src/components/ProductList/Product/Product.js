@@ -6,9 +6,11 @@ import bookImg from './books.jpg';
 function Product(props) {
     return (
       <div className="product">
-          <img src={bookImg} alt="Book Image" width="100px" height="100px"  />
-          <h6>{ props.product.name }</h6>
-          <button className="button">Add to cart</button>
+         <div className="bookImage">
+            <img src={bookImg} alt="Book Image" width="120px" height="120px" />
+          </div>
+            <h6>{ props.product.name }</h6>
+            <button className="button">Add to cart</button>
         
       </div>
     );

@@ -76,7 +76,33 @@ const productListData = [
     name : 'The gloabal warming',
     category : 'Science',
     author : 'Eco publishers'
+},
+
+{
+    id : 13,
+    name : 'Ramayana',
+    category : 'Mythology',
+    author : 'Eco publishers'
+},
+{
+    id : 14,
+    name : 'Bhagvadgita',
+    category : 'Mythology',
+    author : 'Eco publishers'
+},
+{
+    id : 15,
+    name : 'Hanuman',
+    category : 'Mythology',
+    author : 'Eco publishers'
+},
+{
+    id : 16,
+    name : 'Bheeshma',
+    category : 'Mythology',
+    author : 'Eco publishers'
 }
+
 
 
 ]
