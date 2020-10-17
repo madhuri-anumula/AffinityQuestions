@@ -1,4 +1,11 @@
 # AffinityQuestions
 This project is related to AffinityAnswers questions.
 
-[2020-10-15]
+# For running the app 
+
+[initialized with create-react-app]
+
+1. clone repo
+1. npm install 
+1. npm start
+
