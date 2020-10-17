@@ -1,6 +1,10 @@
 
 .productList
 {
-    display: inline-flex;
+    width: 80%;
     background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }

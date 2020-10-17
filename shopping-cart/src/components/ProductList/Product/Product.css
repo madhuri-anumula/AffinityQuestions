@@ -2,8 +2,13 @@
 {
     border-style: solid;
     display: flex;
-    width: 300px;
-    height: 300px;
+    width: 33%;
     flex-direction:column;
+    justify-content: space-between;
+    box-sizing: border-box;
 
+}
+.button
+{
+    width: 80px;
 }

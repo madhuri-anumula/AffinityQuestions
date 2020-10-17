@@ -2,7 +2,7 @@
 {
     min-height: 20vh;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     font-size: calc(10px + 2vmin);
     background:linear-gradient(110deg,#eeee87 50%,#eeeeee 60%);
     display: inline-flex;
@@ -10,9 +10,15 @@
 }
 .cartImg
 {
-    align-content: flex-end;
+    
     border: solid;
     display: inline-flex;
+}
+
+.cartUserSection
+{
+    align-items: flex-end;
+    flex-direction:row;
 }
 
 .username

@@ -13,8 +13,7 @@
   }
 }
 
-.rowC  {display:flex; flex-direction:row;}
-
+.main  {display:flex; flex-direction:row;}
 
 .App-header {
   background-color: #282c34;

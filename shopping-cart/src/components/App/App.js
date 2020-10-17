@@ -20,8 +20,8 @@ function App(props) {
   return (
     <div>
       <Header />
-      <div class="rowC">
-       { console.log(productsByCategory) }
+      <div class="main">
+      
         <CategoryList handleCategoryChange= {handleCategoryChange}/>  
         <ProductList productsByCategory={productsByCategory} />
       
