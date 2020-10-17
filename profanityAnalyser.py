@@ -26,7 +26,7 @@ def ValidateFile():
                         degreeOfProfanity = degreeOfProfanity + slurList[key]
                     
                 grossProfanityForLine[i]= round(degreeOfProfanity,2)
-                print (degreeOfProfanity)
+                
             
             
             print(grossProfanityForLine)
