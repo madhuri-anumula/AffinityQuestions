@@ -3,9 +3,9 @@ import './CategoryList.css';
 import Category from './Category/Category';
 import categoryListData from './CategoryListData';
 
-function CategoryList() {
+function CategoryList({handleCategoryChange}) {
 
-   const categoryComponents = categoryListData.map(item => <Category key = {item.id} category={item} />)
+   const categoryComponents = categoryListData.map(item => <Category key = {item.id}  handleCategoryChange={handleCategoryChange}  category={item} />)
     return (
       <div className="categoryList">
           

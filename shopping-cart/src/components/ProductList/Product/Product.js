@@ -6,8 +6,9 @@ import bookImg from './books.jpg';
 function Product(props) {
     return (
       <div className="product">
-          <image src={bookImg} alt="HTML gif Image"  />
-          <h3>{ props.product.name }</h3>
+          <img src={bookImg} alt="Book Image" width="30px" height="30px"  />
+          <h6>{ props.product.name }</h6>
+          <button>Add to cart</button>
         
       </div>
     );

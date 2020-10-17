@@ -1,5 +1,6 @@
 
 .productList
 {
+    display: inline-flex;
     background-color: bisque;
 }

@@ -5,4 +5,18 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     background:linear-gradient(110deg,#eeee87 50%,#eeeeee 60%);
+    display: inline-flex;
+    display:flex; flex-direction:row;
+}
+.cartImg
+{
+    align-content: flex-end;
+    border: solid;
+    display: inline-flex;
+}
+
+.username
+{
+    border: solid;
+    display: inline-flex;
 }
