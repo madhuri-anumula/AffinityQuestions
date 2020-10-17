@@ -1,15 +1,24 @@
 Given a web application,how do you choose a JS framework to solve?
-Javascript has many frameworks,tools and libraries like Angular,React,Vue.js,ember.js and more. each offering
-a few advantages over its peers.Working on a small project or a large one, solo or in a team,all of these
-details should be considered while deciding on the framework.
+
+Javascript has many frameworks,tools and libraries like Angular,React,Vue.js,ember.js and
+ more each offering a few advantages over its peers.
+ 
 
 Following key aspects might aid in identifying the appropriate framework.
 
-1) Avalability of learning resources and polularity(github stars,developer base) indirectly
-help us in pooling skilled programmers.
-2) Core features - Identyfying core requiremnts of project and weighing with the
-  framework support.
-3)Usability - as application scales up, picking framework which is developer friendly might be helpful.
+1) Project complexity,team size and duration should be considered while deciding on 
+the framework.
+
+2) Avalability of learning resources and popularity(github stars,developer base) of framework
+will help us in pooling skilled programmers. It's important for having a efficient team.
+
+2) Core features - Identyfying core requirements of project and weighing with the available
+  framework support will help us in meeting functional/non-functional requirements better.
+
+3)Usability - as application scales up, picking framework which is developer friendly will be key to project success.
+
 4)Ease of integration(with other libraries)- As project might need new third party features, 
 support for integration/extendability becomes important factor too.
 
+References:
+Google links

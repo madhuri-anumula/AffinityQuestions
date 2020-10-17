@@ -1,7 +1,7 @@
 How much of Unix command line are you familiar with? Give some examples.
 
 My Answer:
-Working on projects in ubuntu and linux machine, I am aware of quite a few UNIX commands. 
+Working on projects in ubuntu and linux machine, I am aware of good number of commands. 
 Examples:
 User commands:
     whoami

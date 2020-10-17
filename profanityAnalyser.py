@@ -1,4 +1,10 @@
-
+#   Assumtions listed below.
+#   slurList- Dictionary holds predefined list of words with a degree of profanity attached to them
+#   This list is required for execution.
+#   TweetsFile.txt- This file has english sentences with/without words from the Slurlist. This file exists in 
+#   same folder as the program.
+#   Input- Set of slur words and text file with english sentences.
+#   Output- Two values: Line number AND degree of profanity(indicated with decimal value).
 
 slurList={ 'gook': .4, 'sambo': .6, 'spook': .3, 'jap': .7, 'mongrel': .6, 'nigger': .8}
 
