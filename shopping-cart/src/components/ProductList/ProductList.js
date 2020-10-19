@@ -5,7 +5,7 @@ import productListData from './ProductListData';
 
 
 function ProductList(props) {
- const productComponents = props.productsByCategory.map( item => <Product key={item.id} product={item}/>)
+ const productComponents = props.productsByCategory.map( item => <Product handleAddToCart= {props.handleAddToCart} key={item.id} product={item}/>)
     return (
       <div className="productList">
         

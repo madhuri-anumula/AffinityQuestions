@@ -10,20 +10,25 @@ import productListData from '../ProductList/ProductListData';
 function App(props) {
 
   const [categoryName, setCategoryName] = useState("Fiction");
+  const [cartItems, setCartItems] = useState([]);
 
   const handleCategoryChange = event => {
     setCategoryName(event.currentTarget.value);
+  };
+
+  const handleAddToCart = event => {
+    setCartItems(current => [...current,event.currentTarget.value]);
   };
 
   const productsByCategory = productListData.filter(product => product.category== categoryName)
 
   return (
     <div>
-      <Header />
+      <Header cartItems={cartItems} />
       <div class="main">
       
         <CategoryList handleCategoryChange= {handleCategoryChange}/>  
-        <ProductList productsByCategory={productsByCategory} />
+        <ProductList productsByCategory={productsByCategory} handleAddToCart={handleAddToCart} />
       
       </div>
     </div> 

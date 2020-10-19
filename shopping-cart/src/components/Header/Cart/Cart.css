@@ -1,0 +1,9 @@
+.cartItem
+{border-style: solid;
+display: flex;
+width: 33%;
+flex-direction:row;
+box-sizing: border-box;
+align-items: center;
+margin-top: 0vmin;
+}

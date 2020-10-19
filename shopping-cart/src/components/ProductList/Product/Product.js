@@ -10,7 +10,7 @@ function Product(props) {
             <img src={bookImg} alt="Book Image" width="120px" height="120px" />
           </div>
             <h6>{ props.product.name }</h6>
-            <button className="button">Add to cart</button>
+            <button className="button" value ={props.product.name} onClick={props.handleAddToCart}>Add to cart</button>
         
       </div>
     );
