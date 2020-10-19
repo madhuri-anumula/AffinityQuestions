@@ -7,3 +7,49 @@ box-sizing: border-box;
 align-items: center;
 margin-top: 0vmin;
 }
+.cart{
+    position : relative;
+
+}
+.cartDetails
+{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 400px;
+    height: 400px;
+    /* margin-left: -200px; */
+    margin-top: 0;
+    z-index: 100;
+    background: white;
+    padding: 2px;
+    font: 10pt tahoma;
+    border: 1px solid gray;
+}
+.cartImg
+{
+
+    border: solid;
+    display: inline-flex;
+}
+
+.cartSummary
+{
+    position: relative;
+}
+
+.itemCount
+{
+    background-color: #006;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    font-size: 0.8rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.2rem;
+    border-radius: 20px;
+    position: absolute;
+    top: -9px;
+    right: -9px;
+}
