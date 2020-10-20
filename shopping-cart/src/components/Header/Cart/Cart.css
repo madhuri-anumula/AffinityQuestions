@@ -16,12 +16,12 @@ margin-top: 0vmin;
     position: absolute;
     top: 100%;
     right: 0;
-    width: 400px;
-    height: 400px;
+    min-width: 200px;
+    min-height: 200px;
     /* margin-left: -200px; */
     margin-top: 0;
     z-index: 100;
-    background: white;
+    background: #dadab8;
     padding: 2px;
     font: 10pt tahoma;
     border: 1px solid gray;

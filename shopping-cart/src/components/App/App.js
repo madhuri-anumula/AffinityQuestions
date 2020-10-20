@@ -19,9 +19,9 @@ function App(props) {
 
   
    
-  const handleItemRemove = event=>
+  const handleRemoveItem = event=>
   {
-    //remove
+    setCartItems(cartItems.filter(item => item.name !== event.currentTarget.value))
   }
 
   const handleAddToCart = event => {
@@ -34,7 +34,7 @@ function App(props) {
   
   return (
     <div>
-      <Header cartItems = {cartItems} />
+      <Header cartItems = {cartItems}  handleRemoveItem={handleRemoveItem}/>
       <div class="main">
       
         <CategoryList handleCategoryChange= {handleCategoryChange}/>  

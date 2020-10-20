@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import cart from './Cart.png';
 import './Cart.css';
-
+import bookImg from './books.jpg';
 
 
 
@@ -10,7 +10,6 @@ function Cart(props) {
   const [isCartOpen, setIsCartOpen] = useState(false);
 
   const handleDisplayCart = event => {
-    console.log("in togge");
     setIsCartOpen(!isCartOpen);
   }
 
@@ -23,14 +22,16 @@ function Cart(props) {
    
     return acc;
   }, {});
-  
+
+
   const renderCart = () =>{
     if (isCartOpen)
     {
-      console.log("in render");
      return <ol className="cartDetails">
         {Object.keys(productQuantity).map(book => (
-          <li>{book}: Quantity {productQuantity[book]} <button value={book} >Remove</button></li> 
+          <li> <div className="bookImage">
+          <img src={bookImg} alt="Book Image" width="30px" height="30px" />
+        </div> {book}: Quantity {productQuantity[book]} <button value={book} onClick={props.handleRemoveItem}>Remove</button></li> 
           
         ))}
       </ol>  
@@ -50,13 +51,7 @@ function Cart(props) {
       </div>
   );
 
-  // <div>
-  //   <div className="cartItem">
-  //             <img src={bookImg} alt="Book Image" width="120px" height="120px" />
-  //           </div>
-  //             <h6>{ props.productsForCart.name }</h6>
-  //             <button className="button" value=  { props.productsForCart.name }  handleItemRemove={handleItemRemove}>Remove</button>
-  //   </div>
+  
 
 }
 
