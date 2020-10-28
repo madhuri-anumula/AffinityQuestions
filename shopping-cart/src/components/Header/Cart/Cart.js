@@ -23,15 +23,24 @@ function Cart(props) {
     return acc;
   }, {});
 
+  const handleDisplayLastCart = (event) => { 
+    
+    props.handleRemoveItem(event);
+    
+    if (Object.keys(productQuantity).length== 1)   
+    {
+       setIsCartOpen(!isCartOpen);
+    }
+  }
 
   const renderCart = () =>{
-    if (isCartOpen)
+    if (isCartOpen && !props.isCartEmpty) 
     {
      return <ol className="cartDetails">
         {Object.keys(productQuantity).map(book => (
           <li> <div className="bookImage">
           <img src={bookImg} alt="Book Image" width="30px" height="30px" />
-        </div> {book}: Quantity {productQuantity[book]} <button value={book} onClick={props.handleRemoveItem}>Remove</button></li> 
+        </div> {book}: Quantity {productQuantity[book]} <button value={book} onClick={handleDisplayLastCart}>Remove</button></li> 
           
         ))}
       </ol>  

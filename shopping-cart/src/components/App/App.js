@@ -11,7 +11,7 @@ function App(props) {
 
   const [categoryName, setCategoryName] = useState("Fiction");
   const [cartItems, setCartItems] = useState([]);
-  
+  const [isCartEmpty,setCartEmpty] = useState(true);
 
   const handleCategoryChange = event => {
     setCategoryName(event.currentTarget.value);
@@ -22,11 +22,16 @@ function App(props) {
   const handleRemoveItem = event=>
   {
     setCartItems(cartItems.filter(item => item.name !== event.currentTarget.value))
+    if( cartItems.length > 0)
+      setCartEmpty(false);
+    else
+      setCartEmpty(true);
   }
 
   const handleAddToCart = event => {
     const productsForCart = productListData.filter(product => product.name == event.currentTarget.value)
-    setCartItems(current => [...current,productsForCart[0]]);
+    setCartItems(current => [...current,productsForCart[0]])
+    setCartEmpty(false);
 
   };
 
@@ -34,7 +39,7 @@ function App(props) {
   
   return (
     <div>
-      <Header cartItems = {cartItems}  handleRemoveItem={handleRemoveItem}/>
+      <Header cartItems = {cartItems} isCartEmpty={isCartEmpty} handleRemoveItem={handleRemoveItem}/>
       <div class="main">
       
         <CategoryList handleCategoryChange= {handleCategoryChange}/>  
